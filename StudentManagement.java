@@ -7,7 +7,7 @@ public interface StudentManagement {
 	
 	void deleteStudent(int rollNo);
 	
-	Student searchStudent(int rollNo);
+	void searchStudent(int rollNo);
 	
 	void displayAll();
 	

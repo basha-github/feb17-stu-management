@@ -22,14 +22,32 @@ public class StudentManagementImpl  implements StudentManagement{
 
 	@Override
 	public void deleteStudent(int rollNo) {
-		// TODO Auto-generated method stub
+		Student eachStu = null;
+		for(int i=0;i<stuList.size();i++) {
+			eachStu = stuList.get(i);
+			if(eachStu.getRollNo() == rollNo) {
+				stuList.remove(i);
+				System.out.println("Successfully deleted Student--->"+eachStu.getName());
+			}
+			
+		}
 		
 	}
 
 	@Override
-	public Student searchStudent(int rollNo) {
-		// TODO Auto-generated method stub
-		return null;
+	public void searchStudent(int rollNo) {
+
+		Student eachStu = null;
+		for(int i=0;i<stuList.size();i++) {
+			eachStu = stuList.get(i);
+			if(eachStu.getRollNo() == rollNo) {
+				System.out.println("Student got found---->"+eachStu.getName());
+				System.out.println(eachStu);
+			}
+			
+		}
+		
+	
 	}
 
 	@Override
