@@ -15,6 +15,9 @@ public class StudentResults {
 		stuMang.addStudent(john);
 		
 		
+		stuMang.displayAll();
+		
+		
 		
 		
 	}

@@ -9,7 +9,7 @@ public interface StudentManagement {
 	
 	Student searchStudent(int rollNo);
 	
-	List<Student> displayAll();
+	void displayAll();
 	
 
 }

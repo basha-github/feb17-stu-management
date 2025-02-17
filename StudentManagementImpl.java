@@ -33,9 +33,14 @@ public class StudentManagementImpl  implements StudentManagement{
 	}
 
 	@Override
-	public List<Student> displayAll() {
-		// TODO Auto-generated method stub
-		return null;
+	public void displayAll() {
+		
+		Student eachStu = null;
+		for(int i=0;i<stuList.size();i++) {
+			eachStu = stuList.get(i);
+			System.out.println(eachStu);
+		}
+		
 	}
 
 }
